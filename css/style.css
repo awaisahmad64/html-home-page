@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	text-decoration:none;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:35px 100px 0;
+	color:#fff;
+}
+header h2 a{
+	color:inherit;
+	text-transform:uppercase;
+}
+nav,ul{
+	list-style: none;
+}
+nav ul li  a{
+color:inherit;
+cursor:pointer;
+}
+header nav ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+header nav ul li{
+	margin:0 15px;
+}
+header nav ul li a:first-child{
+	margin-left:0;
+}
+header nav ul li a:last-child{
+	margin-right:0;
+}
+@media only screen and (max-width: 1000px){
+	header{
+		padding:20px 50px;
+	}
+}
+@media only screen and (max-width: 669px){
+	header{
+		flex-direction: column;
+	}
+	header h1{
+		margin-bottom: 15px;
+	}
+	header nav ul li{
+		margin:0 7px;
+	}
+}
+/*banner-area*/
+section{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	padding:110px 100px;
+}
+@media only screen and (max-width: 1000px){
+ section{
+ 	padding:100px 50px;
+ }
+}
+@media only screen and (max-width: 1000px){
+ section{
+ 	padding:125px 30px;
+ }
+}
+section p{
+	width: 100px;
+	text-align: center;
+	padding:0 20px;
+	margin-bottom: 35px;
+	line-height: 2px;
+}
+.banner-area{
+	min-height: 100vh;
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	color:#fff;
+}
+.banner-area .banner-image{
+	background-image: url('../image/new-york-2198199_960_720.jpg');
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+background-size: cover;
+z-index: -1;
+}
+.banner-area .banner-image:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:rgba(0,0,0,.8);
+	height: 100%;
+	width: 100%;
+}
+.banner-area h1{
+	font-size: 65px;
+	font-family: marienda;
+	margin-bottom: 15px;
+}
+.banner-area h3{
+	
+	margin-bottom: 40px;
+	font-size: 25px;
+}
+a.banner-btn{
+	padding:15px 35px;
+	background:crimson;
+	color:#fff;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
